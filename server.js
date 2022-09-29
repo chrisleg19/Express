@@ -38,7 +38,7 @@ app.get("/magic/:question", (req, res)=>{
 
 
 
-//assigning the port# we are listening to
+//assigning the port# we are listening to (variable 3000 established above)
 app.listen(PORT, ()=>{
     console.log("Server is running on port 3000")
 })
