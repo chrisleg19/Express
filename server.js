@@ -32,7 +32,7 @@ const responses = ["It is certain", "It is decidedly so", "Without a doubt", "Ye
 app.get("/magic/:question", (req, res)=>{
     const {question} = req.params
     const randomRes = responses[Math.floor(Math.random()*responses.length)]
-    res.send(`Question: ${question} | Magic 8 Ball Response: ${randomRes}`)
+    res.send(`Question: ${question} <br> <br> Magic 8 Ball Response: <h1>${randomRes}</h1>`)
 })
 
 
